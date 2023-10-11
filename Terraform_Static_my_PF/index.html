@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Lighter background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .project, .review {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .project:hover, .review:hover {
+            transform: translateY(-5px);
+        }
+
+        .animation {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Add styling for the profile image */
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Rounded profile image */
+            margin: 20px auto; /* Center the image */
+            display: block; /* Remove any default inline styling */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shashank's Portfolio</h1>
+    </header>
+    <div class="container">
+        <!-- Profile Image -->
+        <img src="https://terraformproject01shas23.s3.ap-south-1.amazonaws.com/profile.jpg" alt="Profile Image" class="profile-image">
+        
+        <section class="project animation">
+            <h2>Project 1: Portfolio Website</h2>
+            <p>This is a simple portfolio website built using HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section class="project animation">
+            <h2>Project 2: E-commerce Website</h2>
+            <p>An e-commerce website developed using React and Node.js, featuring product listings and a shopping cart.</p>
+        </section>
+
+        <section class="review animation">
+            <h2>Client Review</h2>
+            <p>"Shashank is an exceptional web developer. He delivered high-quality work on time and within budget. I highly recommend his services!"</p>
+        </section>
+
+        <section class="review animation">
+            <h2>Another Client Review</h2>
+            <p>"I was impressed with Shashank's attention to detail and his ability to bring my vision to life. His communication was excellent throughout the project."</p>
+        </section>
+    </div>
+</body>
+</html>
